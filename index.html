@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weight Converter</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="container">
+        <h1>Weight Converter</h1>
+        <br><br>
+        <div id="sub-container">
+            <div id="col-container1">
+                <div class="column">
+                    <p class="col-heading" id="kg">KiloGrams</p>
+                    <br>
+                    <input id="kgInput" onchange="calculateWeight1()" type="number" min="0">
+                </div>
+                <br><br>
+                <div class="column">
+                    <p class="col-heading">Pounds</p>
+                    <h2 id="pounds"></h2>
+                </div>
+            </div>
+            <div id="col-container2">
+                <div class="column">
+                    <p class="col-heading" id="pound">Pounds</p>
+                    <br>
+                    <input id="poundInput" onchange="calculateWeight2()" type="number" min="0">
+                </div>
+                <br><br>
+                <div class="column">
+                    <p class="col-heading">KiloGrams</p>
+                    <h2 id="kgs"></h2>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
